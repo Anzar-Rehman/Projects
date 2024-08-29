@@ -1,1 +1,31 @@
+Movie Recommender System:
+This project is a content-based movie recommender system using data from the TMDB (The Movie Database). It involves data preprocessing, feature extraction, and similarity computation to recommend movies similar to a user-selected movie.
 
+
+
+Datasets
+The project uses two datasets:
+tmdb_5000_movies.csv: Contains information about movies, including genres, keywords, budget, popularity, and more.
+tmdb_5000_credits.csv: Provides details about the cast and crew for each movie.
+
+
+Key Features
+Data Preprocessing: The datasets are cleaned and preprocessed to handle missing values and extract relevant features such as genres, keywords, cast, and crew.
+
+Feature Engineering: The system creates a 'soup' of features combining keywords, cast, genres, and director names to build a content profile for each movie.
+
+Similarity Computation: Utilizes cosine similarity to compute the similarity between the content profiles of movies.
+Movie Recommendations: Based on the computed similarities, the system recommends the top 5 movies that are most similar to a user-selected movie.
+
+
+How to Use
+Load the datasets (tmdb_5000_movies.csv and tmdb_5000_credits.csv).
+Run the preprocessing steps to prepare the data.
+Input a movie title to receive top 5 similar movie recommendations.
+
+
+Requirements
+Python 3.x
+NumPy
+Pandas
+Scikit-Learn
